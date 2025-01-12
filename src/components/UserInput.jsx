@@ -1,17 +1,18 @@
 import React from "react";
 import { Input } from "./Input";
+import InputGroup from "./InputGroup";
 
 const UserInput = () => {
   return (
     <section id="user-input">
-      <div className="input-group">
+      <InputGroup>
         <Input label="Initial Investment" inputType="number" />
         <Input label="Annual Investment" inputType="number" />
-      </div>
-      <div className="input-group">
+      </InputGroup>
+      <InputGroup>
         <Input label="Expected Return" inputType="number" />
         <Input label="Duration" inputType="number" />
-      </div>
+      </InputGroup>
     </section>
   );
 };
