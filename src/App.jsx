@@ -13,14 +13,14 @@ function App() {
     annualInvestment: {
       label: "annual Investment",
       name: "annualInvestment",
-      initialValue: 1200,
+      initialValue: 900,
     },
     expectedReturn: {
       label: "expected Return",
       name: "expectedReturn",
-      initialValue: 1000,
+      initialValue: 5.5,
     },
-    duration: { label: "duration", name: "duration", initialValue: 1000 },
+    duration: { label: "duration", name: "duration", initialValue: 10 },
   });
 
   const handleInputChange = (name, value) => {
