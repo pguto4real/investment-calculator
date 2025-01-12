@@ -4,8 +4,8 @@ import InputGroup from "./InputGroup";
 
 const UserInput = ({ inputs, onInputChange }) => {
   // Group the objects into pairs
-  const firstHalf = inputs.slice(0, 2);
-  const secondHalf = inputs.slice(2);
+  const firstHalf = Object.values(inputs).slice(0, 2);
+  const secondHalf = Object.values(inputs).slice(2);
   return (
     <section id="user-input">
       <InputGroup>
