@@ -26,7 +26,7 @@ function App() {
   const handleInputChange = (name, value) => {
     setUserInputs((prevInputs) => ({
       ...prevInputs, // Spread the previous state
-      [name]: { ...prevInputs[name], initialValue: value }, // Update the specific property
+      [name]: { ...prevInputs[name], initialValue: +value }, // Update the specific property
     }));
   };
 
