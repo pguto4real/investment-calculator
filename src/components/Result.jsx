@@ -42,11 +42,10 @@ const Result = ({ inputs }) => {
           return (
             <tr key={yearData.year}>
               <td>{yearData.year}</td>
-            <td>{formatter.format(yearData.valueEndOfYear)}</td>
-            <td>{formatter.format(yearData.interest)}</td>
-            <td>{formatter.format(totalInterest)}</td>
-            <td>{formatter.format(totalAmountInvested)}</td>
-  
+              <td>{formatter.format(yearData.valueEndOfYear)}</td>
+              <td>{formatter.format(yearData.interest)}</td>
+              <td>{formatter.format(totalInterest)}</td>
+              <td>{formatter.format(totalAmountInvested)}</td>
             </tr>
           );
         })}
